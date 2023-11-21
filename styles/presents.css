@@ -1,0 +1,186 @@
+@import "./values.css";
+
+body {
+  background: url(../src/background_presents.jfif) no-repeat bottom;
+  background-size: cover;
+}
+
+.text p {
+  color: #fff;
+  text-align: center;
+  font-family: var(--text-font);
+}
+
+.box {
+  mix-blend-mode: hard-light;
+}
+
+.box img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.present {
+  display: none;
+  z-index: 100;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100vw;
+  height: 100vh;
+}
+
+.present img {
+  height: 80vh;
+}
+
+.present_img {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cross {
+  position: inherit;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 50px;
+  font-family: Roboto;
+}
+
+.cross:hover {
+  cursor: pointer;
+}
+
+@media (min-aspect-ratio: 6/5) {
+  .android {
+    display: none;
+  }
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-position: bottom -45vh right 0px;
+  }
+
+  header {
+    position: relative;
+    width: 16vh;
+    display: inline;
+    top: 40%;
+    transform: translateY(-50%);
+    margin-left: 30px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    height: 98vh;
+    width: 91vw;
+    margin-left: 50px;
+    margin-right: 9vw;
+  }
+
+  .text {
+    margin-top: 14.8vh;
+  }
+
+  .text p {
+    font-size: 3vw;
+  }
+
+  .boxes {
+    display: flex;
+    flex-direction: row;
+    margin-top: 11vh;
+    margin-left: 4vw;
+    justify-content: space-between;
+  }
+
+  .double {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+  }
+
+  .box img {
+    width: 16.4vw;
+  }
+}
+
+@media (max-aspect-ratio: 6/5) {
+  .pc {
+    display: none;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  header {
+    width: 44vw;
+    display: flex;
+    margin-left: 50vw;
+    transform: translateX(-50%);
+    margin-top: 4.7vh;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6vh;
+    align-items: center;
+  }
+
+  .text p {
+    width: 89vw;
+    text-align: center;
+    font-size: 4.8vw;
+  }
+
+  .boxes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 85.4vw;
+    height: 55vh;
+    margin-top: 7.2vh;
+  }
+
+  .double {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .box {
+    display: flex;
+    max-height: 23.6vh;
+    max-width: 23.6vh;
+  }
+
+  .double .box:last-child {
+    margin-left: 7.6vw;
+  }
+
+  .box img {
+    width: 95%;
+    height: auto;
+  }
+
+  .present img {
+    width: 95vw;
+    height: auto;
+    max-height: 90vh;
+    max-width: 90vh;
+  }
+}
