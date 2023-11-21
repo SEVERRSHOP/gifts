@@ -1,0 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Jura:300,regular,500,600,700);
+
+:root {
+  --brand-size: 95%;
+  --text-font: Jura;
+  --text-color: #DAD7C6;
+  --text-size: 64px;
+  --button-font-size: 70px;
+  --button-font-family: Anonymous Pro;
+  --button-color: #706E68;
+  --img-width: calc((100vh*960)/1280) --value2: 2;
+}
